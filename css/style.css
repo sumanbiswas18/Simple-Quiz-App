@@ -1,6 +1,17 @@
 /* ========== Custom Css Styleing ============ */
-
 /* ==== Default Screen Size ==== */
+@font-face{
+    font-family: Merrieweather ;
+    src: url("../fonts/Merriweather-Regular.ttf");
+}
+@font-face{
+    font-family: Lato ;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+body{
+    font-family: Lato !important;
+    background-color: #032539 !important;
+}
 
 /* ==== 1024px Screen Size ==== */
 @media only screen and (max-width: 1024px) {
