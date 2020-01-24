@@ -1,26 +1,75 @@
 /* ========== Custom Css Styleing ============ */
 /* ==== Default Screen Size ==== */
-@font-face{
-    font-family: Merrieweather ;
-    src: url("../fonts/Merriweather-Regular.ttf");
+@font-face {
+  font-family: Merrieweather;
+  src: url("../fonts/Merriweather-Regular.ttf");
 }
-@font-face{
-    font-family: Lato ;
-    src: url("../fonts/Lato-Regular.ttf");
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Regular.ttf");
 }
-body{
-    font-family: Lato !important;
-    background-color: #032539 !important;
+
+/* index page css ======== */
+body {
+  font-family: Merrieweather !important;
+  background-color: #1e1e2c !important;
 }
+.index {
+  margin-top: 250px;
+}
+.index a.btn.btn-outline-light {
+  font-family: Lato;
+  border-radius: 13px !important;
+  padding: 8px 20px;
+}
+/* index page css end here ======  */
+
+/* game page css ========== */
+.game {
+  margin-top: 150px;
+}
+.game .list-group-horizontal {
+  padding: 5px 0;
+}
+.game .list-group-item.item-option {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  transition: 300ms ease;
+}
+.game .list-group-item.item-prefix {
+  display: flex;
+  align-items: center !important;
+  color: #2d2d44;
+  background-color: #33e1ed;
+}
+.game .list-group-item.item-option:hover {
+  cursor: pointer;
+  background-color: #cefcff;
+}
+
+/* game page css end here ========== */
 
 /* ==== 1024px Screen Size ==== */
 @media only screen and (max-width: 1024px) {
 }
 /* ==== 768px Screen Size ==== */
 @media only screen and (max-width: 768px) {
+  .index {
+    margin-top: 100px;
+  }
+  .game {
+    margin-top: 120px;
+  }
 }
 /* ==== 425px Screen Size ==== */
 @media only screen and (max-width: 425px) {
+  .index {
+    margin-top: 150px;
+  }
+  .game {
+    margin-top: 100px;
+  }
 }
 /* ==== 375px Screen Size ==== */
 @media only screen and (max-width: 375px) {
