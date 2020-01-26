@@ -25,25 +25,26 @@ body {
 /* index page css end here ======  */
 
 /* game page css ========== */
-.game {
+#game {
   margin-top: 150px;
 }
-.game .list-group-horizontal {
+#game .list-group-horizontal {
   padding: 5px 0;
 }
-.game .list-group-item.item-option {
+#game .list-group-item.item-option {
+  font-family: Lato;
   width: 100%;
   height: auto;
   background-color: #ffffff;
   transition: 300ms ease;
 }
-.game .list-group-item.item-prefix {
+#game .list-group-item.item-prefix {
   display: flex;
   align-items: center !important;
   color: #2d2d44;
   background-color: #33e1ed;
 }
-.game .list-group-item.item-option:hover {
+#game .list-group-item.item-option:hover {
   cursor: pointer;
   background-color: #cefcff;
 }
