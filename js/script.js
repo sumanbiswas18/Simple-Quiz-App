@@ -5,7 +5,7 @@ const question = document.getElementById("question");
 const choice = Array.from(document.getElementsByClassName("item-option"));
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
-console.log(scoreText);
+console.log(questionCounterText);
 
 // all variables ...
 let currentQuestion = {};
@@ -65,6 +65,10 @@ startGame = () => {
 getNewQuestion = () => {
   // checking if question reached their limits .....
   if (availableQuestions.length === 0 || questionCouter >= max_questions) {
+    // save the score
+    localStorage.setItem("mostRecentScore", score);
+
+    // go to the end page
     return window.location.assign("./end.html");
   }
 
@@ -72,7 +76,7 @@ getNewQuestion = () => {
   questionCouter++;
 
   //updating question counter dinamically
-  questionCounterText.innerHTML = questionCouter + "/" + max_questions;
+  questionCounterText.innerText = `${questionCouter} / ${max_questions}`;
 
   // rendomly picking questions .....
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -125,7 +129,7 @@ choice.forEach(choice => {
 // increment score function
 incrementScore = num => {
   score += num;
-  scoreText.innerHTML = score;
+  scoreText.innerText = score;
 };
 
 // starting the game ........

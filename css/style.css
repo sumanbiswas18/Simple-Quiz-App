@@ -54,6 +54,12 @@ body {
 }
 /* game page css end here ========== */
 
+/* end page css start here ========== */
+#end {
+  margin-top: 150px;
+}
+/* end page css end here ========== */
+
 /* ==== 1024px Screen Size ==== */
 @media only screen and (max-width: 1024px) {
 }
