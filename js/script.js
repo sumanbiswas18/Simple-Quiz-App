@@ -5,7 +5,9 @@ const question = document.getElementById("question");
 const choice = Array.from(document.getElementsByClassName("item-option"));
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
-console.log(questionCounterText);
+const loader = document.getElementsByClassName("lds-ripple");
+const gameElement = document.getElementsByClassName("game-element");
+console.log(gameElement);
 
 // all variables ...
 let currentQuestion = {};
@@ -59,6 +61,10 @@ startGame = () => {
 
   //get a new questions ....
   getNewQuestion();
+
+  // loader
+  // gameElement.classList.remove("d-none");
+  // loader.classList.add("d-none");
 };
 
 // Getting a New question everytime ...

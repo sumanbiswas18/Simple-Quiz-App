@@ -13,12 +13,10 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
   </head>
   <body>
-    <div class="container index text-center">
-      <h1 class="text-white">Welcome To Quiz App</h1>
-      <a href="./game.html" class="btn btn-outline-light mt-3"> Play Now !</a>
-      <a href="./highScores.html" class="btn btn-outline-light mt-3">
-        High Scores
-      </a>
+    <div class="container highScores text-center">
+      <h1 class="text-white">High Scorers Of Quiz Game</h1>
+      <ul class="list-group" id="highScoreList"></ul>
+      <a href="./index.html" class="btn btn-outline-light mt-3">Home</a>
     </div>
 
     <!-- jquery -->
@@ -26,5 +24,6 @@
     <!-- bootstrap js -->
     <script src="./js/bootstrap.min.js"></script>
     <!-- Script js ( Our custom js ) -->
+    <script src="./js/highScores.js"></script>
   </body>
 </html>
